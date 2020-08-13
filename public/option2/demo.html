@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Media browse</title>
+  <style type="text/css">
+    body {
+      background-color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    img {
+      width:186px;
+      height:106px;
+    }
+    hr {
+      margin: 0 40px;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid #333;
+    }
+    .row {
+      background-color:#121212;
+      height: 100px;
+      position: relative;
+      margin: 0;
+      padding: 20px 40px 40px;
+      font-family:'Proxima Nova SemiBold', sans-serif;
+      color: #fff;
+    }
+    .time-container {
+      float: left;
+      margin: 0 15px 0 0;
+      width: 75px;
+    }
+    .time-container .time {
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+    }
+    .img-container {
+      float: left;
+      margin: 0 40px 0 0;
+    }
+    .text-container {
+    }
+    .text-container .title {
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      -webkit-font-smoothing:antialiased;
+    }
+    .text-container .subtitle {
+      margin: 0;
+      padding: 0;
+      font-family: Proxima Nova Regular,sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      color: #999;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    .header-row {
+      margin: 0 40px;
+      height: 56px;
+      display: flex;
+      flex: 1;
+      align-items: center;
+    }
+    .header-row img {
+      width: 75px;
+      height: 22px;
+    }
+    .burger {
+      width: 25px;
+      height: 16px;
+      position: relative;
+      background-color: transparent;
+      border: 0;
+    }
+    .burger {
+      display: block;
+      cursor: pointer;
+      padding: 10px 15px 10px 10px;
+      margin: 18px 0 0 -10px;
+    }
+    .burger .bar, .burger:after, .burger:before {
+      display: inline-block;
+      cursor: pointer;
+      top: 7px;
+      height: 2px;
+      background: #fff;
+      border-radius: 10px;
+      position: absolute;
+      width: 24px;
+      transition: all .1s ease-in-out;
+      content: "";
+    }
+    .burger:before {
+      top: 0;
+    }
+    .burger:after {
+      width: 14px;
+      top: 14px;
+    }
+
+    .dropper {
+      max-height: 78px;
+    }
+    .wlive {
+      justify-self: end;
+      font-size: 12px;
+      font-weight: 400;
+    }
+    .wlive {
+      color: #fff;
+      font-family: Proxima Nova SemiBold,sans-serif;
+      line-height: 14px;
+      letter-spacing: .4px;
+      background-color: hsla(0,0%,100%,.2);
+      padding: 10px 10px 8px;
+      line-height: 16px;
+      height: 16px;
+      margin: 11px 0;
+    }
+    .wlive-button {
+      color:rgb(255, 255, 255);
+      cursor:pointer;
+      display:block;
+      font-family:"Proxima Nova Regular", sans-serif;
+      font-weight:400;
+      height:56px;
+      position:absolute;
+      right:40px;
+      text-decoration-color:rgb(255, 255, 255);
+      text-decoration-line:none;
+      text-decoration-style:solid;
+      top:56px;
+      width:117px;
+      -webkit-font-smoothing:antialiased;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    .dateNav {
+      display: flex;
+      color: #fff;
+      clear: both;
+      font-family: Proxima Nova SemiBold,sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: .4px;
+      grid-column: 1/13;
+      line-height: 52px;
+      background-color: #000;
+      padding: 0 40px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header-row">
+    <div class="burger" type="button">
+      <div class="bar"></div>
+    </div>
+    <img alt="logo" src="https://vignette.wikia.nocookie.net/sony-pictures-entertaiment/images/6/6f/Cbs-logo-black-and-white.png/revision/latest?cb=20180120023355" />
+  </div>
+  <hr>
+  <div class="dropper">
+    <a class="wlive-button" href="#">
+      <div class="wlive">WATCH LIVE TV</div>
+    </a>
+    <div class="dateNav">
+      Tuesday, Aug 11
+    </div>
+  </div>
+  <div class="row">
+    <div class="time-container">
+      <p class="time">8:00pm</p>
+    </div>
+    <div class="img-container">
+      <a href="#" id="link1">
+        <img src="https://wwwimage-secure.cbsstatic.com/thumbnails/photos/w956-q80/show_asset/58/45/92/ncis_thm_no_logo_16.9_1920x1080.jpg">
+      </a>
+    </div>
+    <div class="text-container">
+      <p class="title">NCIS</p>
+      <p class="subtitle">Ephemera</p>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="time-container">
+      <p class="time">9:00pm</p>
+    </div>
+    <div class="img-container">
+      <a href="#" id="link2">
+        <img src="https://wwwimage-secure.cbsstatic.com/thumbnails/photos/w956-q80/show_asset/58/46/13/fbi_thm_no_logo_16.9_1920x1080.jpg">
+      </a>
+    </div>
+    <div class="text-container">
+      <p class="title">FBI</p>
+      <p class="subtitle">Studio Gangster</p>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="time-container">
+      <p class="time">10:00pm</p>
+    </div>
+    <div class="img-container">
+      <a href="#" id="link3">
+        <img src="https://wwwimage-secure.cbsstatic.com/thumbnails/photos/w956-q80/show_asset/68/75/48/fbimw_thm_no_logo_16.9_1920x1080.jpg">
+      </a>
+    </div>
+    <div class="text-container">
+      <p class="title">FBI: Most Wanted</p>
+      <p class="subtitle">Predators</p>
+    </div>
+  </div>
+</body>
+
+</html>

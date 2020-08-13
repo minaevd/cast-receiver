@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function iframeLoaded(o) {
+                console.log("myframe1 loaded");
+                    o.contentWindow.document.getElementById("link1").addEventListener( "click", function(e) {
+                        e.preventDefault();
+                        console.log("link1 clicked");
+                    });
+            }
+            window.addEventListener("load", function(e) {
+                document.getElementById("link2").addEventListener( "click", function(e) {
+                    e.preventDefault();
+                    console.log("link2 clicked");
+                });
+           });
+        </script>
+    </head>
+    <body>
+        <iframe id="myframe1" onload="iframeLoaded(this)" src="demo.html">iframe not supported</iframe>
+<a href="google.com" id="link2">my link</a>
+    </body>
+</html>

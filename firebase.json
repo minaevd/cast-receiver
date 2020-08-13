@@ -1,0 +1,20 @@
+{
+  "hosting": [{
+    "target": "cast-cbs-1",
+    "public": "public/option1/",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  {
+    "target": "cast-cbs-2",
+    "public": "public/option2/",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }]
+}
